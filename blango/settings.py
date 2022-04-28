@@ -19,6 +19,7 @@ class Dev(Configuration):
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
   BASE_DIR = Path(__file__).resolve().parent.parent
+  AUTH_USER_MODEL = "blango_auth.User"
 
 
 # Quick-start development settings - unsuitable for production
@@ -53,6 +54,7 @@ class Dev(Configuration):
       'crispy_bootstrap5',
       'crispy_forms',
       "debug_toolbar",
+      "blango_auth",
   ]
 
   MIDDLEWARE = [
